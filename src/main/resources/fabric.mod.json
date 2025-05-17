@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "trickster-three-fold-ploys",
+	"version": "${version}",
+	"name": "Trickster Three-Fold Ploys",
+	"description": "Adds 3 categories of new ploys to play with.",
+	"authors": [
+		"Vilodi"
+	],
+	"contact": {
+		"homepage": "https://github.com/punchlamb/",
+		"sources": "https://github.com/punchlamb/trickster-three-fold-ploys"
+	},
+	"license": "MIT",
+	"icon": "assets/trickster-three-fold-ploys/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.github.punchlamb.ttfp.TricksterThreeFoldPloys"
+		],
+		"client": [
+			"com.github.punchlamb.ttfp.TricksterThreeFoldPloysClient"
+		]
+	},
+	"mixins": [
+		"trickster-three-fold-ploys.mixins.json",
+		{
+			"config": "trickster-three-fold-ploys.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*",
+		"owo": "*",
+		"accessories": ">=1.0.0-beta.11",
+		"trickster": ">=2.0.0-beta.18"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
